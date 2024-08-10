@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57EC524A-2354-457B-A413-3FFEC59EE746}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimulationAutomation</RootNamespace>
+    <AssemblyName>SimulationAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\kpsdev1\Apps\Rt1 Simulation\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\kpsdev1\Apps\Rt1 Simulation\</UpdateUrl>
+    <ApplicationRevision>65</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8327B0DA3BE6585D96E96D42752416D31AD72E66</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SimulationAutomation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>open_book_icon_153185 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=5.4.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.4.0\lib\net45\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>D:\PROGRAMS\to be deploy\SV-BillingReportManagementSystem\SV-BillingReportManagementSystem\bin\Debug\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>D:\PROGRAMS\to be deploy\SV-BillingReportManagementSystem\SV-BillingReportManagementSystem\bin\Debug\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PBarcoma, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PBarcoma.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Maintenance\CapacityController.cs" />
+    <Compile Include="Controllers\Maintenance\CustomerOrderController.cs" />
+    <Compile Include="Controllers\Maintenance\ModelLeatimeController.cs" />
+    <Compile Include="Controllers\Maintenance\ModelsController.cs" />
+    <Compile Include="Controllers\Maintenance\CalendarController.cs" />
+    <Compile Include="Controllers\Maintenance\ShippingLeadTimeController.cs" />
+    <Compile Include="Controllers\Reports\DeliveryDateController.cs" />
+    <Compile Include="Controllers\Reports\ItemNoController.cs" />
+    <Compile Include="Controllers\Reports\ItemStocksController.cs" />
+    <Compile Include="Controllers\Reports\PerformanceReportController.cs" />
+    <Compile Include="Controllers\Reports\POMonthlyUploadedController.cs" />
+    <Compile Include="Controllers\Transaction\POSimulationController.cs" />
+    <Compile Include="Controllers\Transaction\sp_GetSimulationData.cs" />
+    <Compile Include="Controllers\UserLoginController.cs" />
+    <Compile Include="EntitiesServices\DB\dbConnection.cs" />
+    <Compile Include="EntitiesServices\DB\dbRT1_SA.cs">
+      <DependentUpon>dbRT1_SA.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesServices\DB\dbRT1_SA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbRT1_SA.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Calendar_InsertUpdate.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Capacity_InsertUpdate.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Compute_MGPLNPvsPO.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_getCapacity.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_GetCapacityPerDate.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_GetDeliveryDate.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_GetHoliday.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_GetPerformanceReport.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_GetSimulationData.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Get_Customer_Order.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Get_MFSODP.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Get_New_PO.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Get_Summary_PO_Uploaded.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Line_Model_Activation.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Monthly_PO_Uploaded.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_Report_Simulation_for_POBalance.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_RT1Simulation_Calendar.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\StoredProcedures\sp_WorkSchemeAndShifting.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\CalendarManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\CapacityAudittrailManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\CapacityManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\CriticalPartSimulator.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\CustomerOrder_SetupManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\ImportFormat.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\ImportFormatPositions.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\ModelLeadTime_SetupManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\ModelManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\ShippingLeadTime_SetupManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\SimulatorManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\Simulator_PlanOutputManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Tables\UserRightsManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_CustomerOrderManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_MCCLDPManager.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_MCPSTP.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_MCPSTP_ItemNo.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_MGPLNPvsPO.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_MJINVP.cs" />
+    <Compile Include="EntitiesServices\EntitiesManager\Views\view_Simulate_InputeQuantity.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\LogModel.cs" />
+    <Compile Include="Models\Maintenance\CalendarModel.cs" />
+    <Compile Include="Models\Maintenance\CapacityModel.cs" />
+    <Compile Include="Models\Maintenance\CustomerOrderModel.cs" />
+    <Compile Include="Models\Maintenance\ModelLeadtimeModel.cs" />
+    <Compile Include="Models\Maintenance\POFormatModel.cs" />
+    <Compile Include="Models\Maintenance\RinksItemNo.cs" />
+    <Compile Include="Models\Maintenance\RinksStocks.cs" />
+    <Compile Include="Models\Maintenance\ShippingLeadTimeModel.cs" />
+    <Compile Include="Models\Maintenance\RinksModel.cs" />
+    <Compile Include="Models\Reports\CriticalParts.cs" />
+    <Compile Include="Models\Reports\DeliveryDate.cs" />
+    <Compile Include="Models\Transaction\POSimulationModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\DataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl_Form\Maintenance\Calendar\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl_Form\Maintenance\Calendar\uscButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Form\Maintenance\Calendar\uscButton.Designer.cs">
+      <DependentUpon>uscButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\CommonUtil.cs" />
+    <Compile Include="Util\DataGridView_Merge_Column_Header.cs" />
+    <Compile Include="Util\Email.cs" />
+    <Compile Include="Util\FileUtil.cs" />
+    <Compile Include="Util\GlobalConstants.cs" />
+    <Compile Include="Util\Messages.cs" />
+    <Compile Include="Util\MessageUtil.cs" />
+    <Compile Include="Views\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\frmCapacityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\frmCapacityEdit.Designer.cs">
+      <DependentUpon>frmCapacityEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\Calendar\frmSetupCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\Calendar\frmSetupCalendar.Designer.cs">
+      <DependentUpon>frmSetupCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\frmCapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\frmCapacity.Designer.cs">
+      <DependentUpon>frmCapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmCustomerOrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmCustomerOrderHistory.Designer.cs">
+      <DependentUpon>FrmCustomerOrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelEdit.Designer.cs">
+      <DependentUpon>FrmModelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelLeadTimeProcessesMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelLeadTimeProcessesMaintenance.Designer.cs">
+      <DependentUpon>FrmModelLeadTimeProcessesMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmModelMaintenance.Designer.cs">
+      <DependentUpon>FrmModelMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmShippingLeadtime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmShippingLeadtime.Designer.cs">
+      <DependentUpon>FrmShippingLeadtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmCustomerOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\FrmCustomerOrder.designer.cs">
+      <DependentUpon>FrmCustomerOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\Calendar\frmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\Calendar\frmCalendar.Designer.cs">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MDIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MDIMain.Designer.cs">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\frmMGLNPComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\frmMGLNPComparison.Designer.cs">
+      <DependentUpon>frmMGLNPComparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\frmPerformanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\frmPerformanceReport.Designer.cs">
+      <DependentUpon>frmPerformanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\frm_ComparisonDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\frm_ComparisonDates.Designer.cs">
+      <DependentUpon>frm_ComparisonDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\frm_ComparisonDemand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\frm_ComparisonDemand.Designer.cs">
+      <DependentUpon>frm_ComparisonDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\frm_CriticalPartsSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\frm_CriticalPartsSimulation.Designer.cs">
+      <DependentUpon>frm_CriticalPartsSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\frmSimulatePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\frmSimulatePO.Designer.cs">
+      <DependentUpon>frmSimulatePO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\frmSimulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\frmSimulator.Designer.cs">
+      <DependentUpon>frmSimulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\uscCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\POSimulation\uscCalendar.Designer.cs">
+      <DependentUpon>uscCalendar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\frmCapacityEdit.resx">
+      <DependentUpon>frmCapacityEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\Calendar\frmSetupCalendar.resx">
+      <DependentUpon>frmSetupCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\frmCapacity.resx">
+      <DependentUpon>frmCapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmModelEdit.resx">
+      <DependentUpon>FrmModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\frmMGLNPComparison.resx">
+      <DependentUpon>frmMGLNPComparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\frmPerformanceReport.resx">
+      <DependentUpon>frmPerformanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\frm_ComparisonDates.resx">
+      <DependentUpon>frm_ComparisonDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\frm_ComparisonDemand.resx">
+      <DependentUpon>frm_ComparisonDemand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\frm_CriticalPartsSimulation.resx">
+      <DependentUpon>frm_CriticalPartsSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Transaction\POSimulation\frmSimulatePO.resx">
+      <DependentUpon>frmSimulatePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Transaction\POSimulation\frmSimulator.resx">
+      <DependentUpon>frmSimulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Transaction\POSimulation\uscCalendar.resx">
+      <DependentUpon>uscCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EntitiesServices\DB\dbRT1_SA.dbml.layout">
+      <DependentUpon>dbRT1_SA.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl_Form\Maintenance\Calendar\uscButton.resx">
+      <DependentUpon>uscButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmCustomerOrderHistory.resx">
+      <DependentUpon>FrmCustomerOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmModelLeadTimeProcessesMaintenance.resx">
+      <DependentUpon>FrmModelLeadTimeProcessesMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmModelMaintenance.resx">
+      <DependentUpon>FrmModelMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmShippingLeadtime.resx">
+      <DependentUpon>FrmShippingLeadtime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\FrmCustomerOrder.resx">
+      <DependentUpon>FrmCustomerOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\Calendar\frmCalendar.resx">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MDIMain.resx">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EntitiesServices\DB\dbRT1_SA.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbRT1_SA.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SimulationAutomation_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="open_book_icon_153185 %281%29.ico" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

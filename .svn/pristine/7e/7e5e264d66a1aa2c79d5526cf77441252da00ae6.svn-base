@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RT1_SA" Class="dbRT1_SADataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KPSPRD;Initial Catalog=RT1_SA;User ID=sa" SettingsObjectName="SimulationAutomation.Properties.Settings" SettingsPropertyName="RT1_SAConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.shipping_leadtime" Member="shipping_leadtimes">
+    <Type Name="shipping_leadtime">
+      <Column Name="packing_hkg_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="packing_shan_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="packing_jp_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_hkg_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_shan_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_jp_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_hkg_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_shan_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_jp_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_hkg_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_shan_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_jp_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_hkg_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_shan_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_jp_air" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="packing_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="packing_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="packing_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="confirmation_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="confirmation_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="confirmation_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cutoff_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cutoff_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cutoff_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="leadtime_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_hkg_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_shan_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="etd_jp_sea" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MFSODP" Member="MFSODPs">
+    <Type Name="MFSODP">
+      <Column Name="FAMP" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="FASQOR" Type="System.String" DbType="Char(9) NOT NULL" CanBeNull="false" />
+      <Column Name="FASQOD" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="FAYFUP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAIDFU" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="FAFCFU" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="FAXOPA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPB" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPF" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPG" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPH" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXBPI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXOPJ" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAIT" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="FASD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FASP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAPS" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="FASECT" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="FAXSND" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="FAYDLR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYDLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FANOOC" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="FAITCT" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="FANMPC" Type="System.String" DbType="Char(22)" CanBeNull="true" />
+      <Column Name="FAXCCR" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="FAUPCR" Type="System.Decimal" DbType="Decimal(15,6)" CanBeNull="true" />
+      <Column Name="FAMKUC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXCTX" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXUMC" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="FAQOFC" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="FASESS" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="FAPCSS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXUMU" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="FAQOCT" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="FAQROC" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="FAQIDS" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="FAXSPA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXRCO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAYRVO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYADT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYANS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYPDL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYPSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYESP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYSPF" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAYDLV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FATMRC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAXBAK" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAYBAK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAQIPC" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="FADPCT" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="FASCCV" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="FAMNRP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAMPPC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXDSM" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FANORI" Type="System.String" DbType="Char(14)" CanBeNull="true" />
+      <Column Name="FANORD" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="FAMPCT" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="FAMKTR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FAXODS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FANOOP" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.view_MCCLDP" Member="view_MCCLDPs">
+    <Type Name="view_MCCLDP">
+      <Column Name="factorycode" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="date" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="a_day_of_week" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="holiday_Type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="total_day" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total_working_day" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total_weeks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total_working_weeks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_customer_order" Member="vw_customer_orders">
+    <Type Name="vw_customer_order">
+      <Column Name="customer_order_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="model_name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="rins_po_no" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="po_qty" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="etd" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="eta_destination" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="eta_customer" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="date_uploaded" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="month_uploaded_into" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customer_destination" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="tat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Capacity" Member="Capacities">
+    <Type Name="Capacity">
+      <Column Name="[INDEX]" Member="INDEX" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CODE" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WorkScheme" Type="System.String" DbType="VarChar(60) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Line" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tat" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Member="Capacity1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Calendar" Member="Calendars">
+    <Type Name="Calendar">
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DayName" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="ShiftACode" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftAWorkScheme" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftAHours" Type="System.Decimal" DbType="Decimal(16,4)" CanBeNull="true" />
+      <Column Name="ShiftBCode" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftBWorkScheme" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftBHours" Type="System.Decimal" DbType="Decimal(16,4)" CanBeNull="true" />
+      <Column Name="ShiftCCode" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftCWorkScheme" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftCHours" Type="System.Decimal" DbType="Decimal(16,4)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="Action" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="DateCreated" AutoSync="Never" Type="System.DateTime" DbType="DateTime" IsDbGenerated="true" CanBeNull="true" />
+      <Column Name="DateModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserLog" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Simulator" Member="Simulators">
+    <Type Name="Simulator">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Suffix" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PO_Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="POBalance" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quota" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftName" Type="System.String" DbType="VarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ShiftCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftWorkScheme" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftHours" Type="System.Decimal" DbType="Decimal(16,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Line" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeliveryDate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.model" Member="models">
+    <Type Name="model">
+      <Column Name="model_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rinks_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="tat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Production_LT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shipment_LT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Simulator_PlanOutput" Member="Simulator_PlanOutputs">
+    <Type Name="Simulator_PlanOutput">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Suffix" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PO_Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="POBalance" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quota" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftName" Type="System.String" DbType="VarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ShiftCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftWorkScheme" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftHours" Type="System.Decimal" DbType="Decimal(16,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Line" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeliveryDate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MGPLNPvsPO" Member="MGPLNPvsPOs">
+    <Type Name="MGPLNPvsPO">
+      <Column Name="model" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="suffix" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="monthyr" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="qty" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRights" Member="UserRights">
+    <Type Name="UserRight">
+      <Column Name="username" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CapacityAudittrail" Member="CapacityAudittrails">
+    <Type Name="CapacityAudittrail">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="model" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkScheme" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[from]" Member="from" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[to]" Member="to" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="reason" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="dateupdated" AutoSync="Never" Type="System.DateTime" DbType="DateTime" IsDbGenerated="true" CanBeNull="true" />
+      <Column Name="incharge" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.customer_order" Member="customer_orders">
+    <Type Name="customer_order">
+      <Column Name="customer_order_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="model_name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="rins_po_no" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="po_qty" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="etd" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="eta_destination" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="eta_customer" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="date_uploaded" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="suffix" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="destination_details" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="month_uploaded_into" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mfosdp_po_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mfosdp_qty" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="mfsodp_etd" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Action" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserLog" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MJINVP" Member="MJINVPs">
+    <Type Name="MJINVP">
+      <Column Name="JAMP" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="JAIT" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="JASD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JASP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JAPS" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="JASEIV" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JAXLOC" Type="System.String" DbType="Char(7)" CanBeNull="true" />
+      <Column Name="JAXSVC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JAYSTK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JANOOM" Type="System.String" DbType="Char(13)" CanBeNull="true" />
+      <Column Name="JAYFUP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JAIDFU" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="JAFCFU" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="JASEVD" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JAXINS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JAQINV" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="JAQTRE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JAQFCA" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+      <Column Name="JAYMFD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JAYDLI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JAXDLC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JASEUS" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JAXISC" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JAXOGN" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="JAXMKR" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JAITCP" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="JAYLTN" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="JASDFC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JASPFC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JAPSFC" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="JAXPAP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JATPAW" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JANOAW" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="JAXABS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.view_MCPSTP_ItemNo" Member="view_MCPSTP_ItemNos">
+    <Type Name="view_MCPSTP_ItemNo">
+      <Column Name="CGITCH" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.view_MCPSTP" Member="view_MCPSTPs">
+    <Type Name="view_MCPSTP">
+      <Column Name="CGMPPR" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="CGITPR" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="CGSDPR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGSPPR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGPSPR" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="CGXODP" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="CGMPCH" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="CGITCH" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="CGSDCH" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGSPCH" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGPSCH" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="CGXISC" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="CGSQEF" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGYFUP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGIDFU" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="CGFCFU" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="CGXOPA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPB" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPF" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPG" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPH" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXOPJ" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGQAIT" Type="System.Decimal" DbType="Decimal(11,6)" CanBeNull="true" />
+      <Column Name="CGXRCL" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="CGXCHB" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="CGXSRG" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGECGR" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="CGSNST" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGMKEF" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGXCHF" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="CGXSRF" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGECLP" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="CGSNFN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGMKFF" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGRTCR" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="CGRTYS" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="CGRTGO" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="CGQAIU" Type="System.Decimal" DbType="Decimal(15,9)" CanBeNull="true" />
+      <Column Name="CGMKKS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGRTUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGMKKO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CGRTUO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PartsSimulator" Member="tbl_PartsSimulators">
+    <Type Name="tbl_PartsSimulator">
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="itemno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="etd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dateadded" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="addedby" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.view_Simulate_InputQuantity" Member="view_Simulate_InputQuantities">
+    <Type Name="view_Simulate_InputQuantity">
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_format_positions" Member="tbl_format_positions">
+    <Type Name="tbl_format_position">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="format_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="model_name" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="po_number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="etd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PO_import_format" Member="tbl_PO_import_formats">
+    <Type Name="tbl_PO_import_format">
+      <Column Name="format_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_name" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="model_name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="is_active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_Get_MFSODP" Method="sp_Get_MFSODP">
+    <ElementType Name="sp_Get_MFSODPResult">
+      <Column Name="FAIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FASD" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FASP" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FAPS" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="FAYDLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FANOOC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FAQOCT" Type="System.Decimal" DbType="Decimal(14,5)" CanBeNull="true" />
+      <Column Name="FAQROC" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Line_Model_Activation" Method="sp_Line_Model_Activation">
+    <Parameter Name="model" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="line" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="status" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_GetHoliday" Method="sp_GetHoliday">
+    <Parameter Name="from" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="to" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="sp_GetHolidayResult">
+      <Column Name="hldy_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="hldy_name" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="hldy_type" Type="System.String" DbType="Char(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Capacity_InsertUpdate" Method="sp_Capacity_InsertUpdate">
+    <Parameter Name="Code" Parameter="code" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="WorkScheme" Parameter="workScheme" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Model" Parameter="model" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Line" Parameter="line" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="tat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Capacity" Parameter="capacity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_get_customer_order" Method="sp_get_customer_order">
+    <Parameter Name="paramDateUploaded" Type="System.String" DbType="VarChar(2000)" />
+    <ElementType Name="sp_get_customer_orderResult">
+      <Column Name="customer_order_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="model_name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="rins_po_no" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="po_qty" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="etd" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="eta_destination" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="eta_customer" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="date_uploaded" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="month_uploaded_into" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customer_destination" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="tat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="mRinks" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="mPO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mQTY" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="mETD" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getCapacity" Method="sp_getCapacity">
+    <ElementType Name="sp_getCapacityResult">
+      <Column Name="rinks_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="tat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="LINE_A" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="CODE_HOURS_A_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_B_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_C_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_D_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_E_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LINE_B" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="CODE_HOURS_A_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_B_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_C_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_D_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CODE_HOURS_E_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Calendar_InsertUpdate" Method="sp_Calendar_InsertUpdate">
+    <Parameter Name="type" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="dayName" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="shiftACode" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="shiftAWorkScheme" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ShiftAHours" Parameter="shiftAHours" Type="System.Decimal" DbType="Decimal(16,4)" />
+    <Parameter Name="shiftBCode" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="shiftBWorkScheme" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ShiftBHours" Parameter="shiftBHours" Type="System.Decimal" DbType="Decimal(16,4)" />
+    <Parameter Name="shiftCCode" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="shiftCWorkScheme" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ShiftCHours" Parameter="shiftCHours" Type="System.Decimal" DbType="Decimal(16,4)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Action" Parameter="action" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="UserLog" Parameter="userLog" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_RT1Simulation_Calendar" Method="sp_RT1Simulation_Calendar">
+    <ElementType Name="sp_RT1Simulation_CalendarResult">
+      <Column Name="shiftname" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DayName" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="ShiftCode" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftWorkScheme" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ShiftHours" Type="System.Decimal" DbType="Decimal(16,4)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_WorkSchemeAndShifting" Method="sp_WorkSchemeAndShifting">
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="sp_WorkSchemeAndShiftingResult">
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="WS" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="SHIFT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Report_Simulation_for_POBalance" Method="sp_Report_Simulation_for_POBalance">
+    <Parameter Name="version" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Report_Simulation_for_POBalanceResult">
+      <Column Name="Seq" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Suffix" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="PO_Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X_Factory" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="XX_Factory" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="XX_Factory_QTY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DIFFERENCE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CUSTOMERS_REPLY" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Reply3" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Reply3_QTY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIFFERENCE_1" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CUSTOMERS_REPLY_1" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_summary_po_uploaded" Method="sp_get_summary_po_uploaded">
+    <ElementType Name="sp_get_summary_po_uploadedResult">
+      <Column Name="month_uploaded_into" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="date_uploaded" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="numofuploaded" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Get_New_PO" Method="sp_Get_New_PO">
+    <ElementType Name="sp_Get_New_POResult">
+      <Column Name="no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PONumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ItemNo" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Suffix" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="tat" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="POBalance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PO_Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeliveryDate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="IsCapacity" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="Line_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Line_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_monthly_po_uploaded" Method="sp_monthly_po_uploaded" IsComposable="true">
+    <Parameter Name="dateuploaded" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.sp_GetDeliveryDate" Method="sp_GetDeliveryDate">
+    <Parameter Name="FactoryCode" Parameter="factoryCode" Type="System.String" DbType="VarChar(2)" />
+    <ElementType Name="sp_GetDeliveryDateResult">
+      <Column Name="ZBMP" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ZBIT" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="ZBSD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ZBSP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ZBPS" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="ZBYAD1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZBQAO1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZBYDLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZBQOVR" Type="System.Decimal" DbType="Decimal(13,5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
